@@ -21,6 +21,10 @@ import DeliveryOngoing from './Components/Client/CartAndOrderHistory/DeliveryOng
 import DeliveryAndChatSystem from './Components/Client/CartAndOrderHistory/DeliveryAndChatSystem';
 import DateSelectionAndCheckout  from './Components/Client/CartAndOrderHistory/DateSelectionAndCheckout';
 import Favourites from './Components/Client/Favourites/Favourites';
+import CMSSignIn from './Components/CMS/SignIn';
+import WelcomeToAMS from './Components/CMS/WelcomeToAMS';
+import ManageUsers from './Components/CMS/ManageUsers';
+import ManageBusoinesses from './Components/CMS/ManageBusiness';
 
 
 function App() {
@@ -48,6 +52,11 @@ function App() {
         <Route path='/chat' element={<DeliveryAndChatSystem/>}/>
         <Route path='/date' element={<DateSelectionAndCheckout/>}/>
         <Route path='/favourites' element={<Favourites/>}/>
+        <Route path='/cms-signin' element={<CMSSignIn/>}/>
+        <Route path='/welcome' element={<WelcomeToAMS/>}/>
+        <Route path='/manage-users' element={<ManageUsers/>}/>
+        <Route path='/manage-businesses' element={<ManageBusoinesses/>}/>
+        
       </Routes>
     </BrowserRouter>
   )
