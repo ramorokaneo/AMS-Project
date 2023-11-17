@@ -20,6 +20,7 @@ import Reciept from './Components/Client/CartAndOrderHistory/Reciept';
 import DeliveryOngoing from './Components/Client/CartAndOrderHistory/DeliveryOngoing';
 import DeliveryAndChatSystem from './Components/Client/CartAndOrderHistory/DeliveryAndChatSystem';
 import DateSelectionAndCheckout  from './Components/Client/CartAndOrderHistory/DateSelectionAndCheckout';
+import Favourites from './Components/Client/Favourites/Favourites';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path='/delivery' element={<DeliveryOngoing/>}/>
         <Route path='/chat' element={<DeliveryAndChatSystem/>}/>
         <Route path='/date' element={<DateSelectionAndCheckout/>}/>
+        <Route path='/favourites' element={<Favourites/>}/>
       </Routes>
     </BrowserRouter>
   )
