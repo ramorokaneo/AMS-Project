@@ -21,18 +21,18 @@ const SignUp = () => {
         <Box
             sx={{
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'flex-end',
                 alignItems: 'center',
                 padding: '20px',
             }}
         >
-            <Grid container spacing={2} justifyContent="center">
+            <Grid container spacing={2} justifyContent="flex-end">
                 <Grid item xs={12} sm={8} md={6} lg={4}>
                     <Paper sx={{ padding: '40px', width: '300%' }}>
                         <Box sx={{ textAlign: 'center', marginBottom: '20px' }}>
                             <img src={signUpImage} alt="Sign Up Image" style={{ width: '100%', maxWidth: '100px' }} />
                         </Box>
-                        <Typography variant="h6" align="left" style={{ fontWeight: 'bolder' }} gutterBottom>
+                        <Typography variant="h6" align="left" style={{ fontWeight: 'bolder'}} gutterBottom>
                             SIGN UP
                             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '-25px' }}>
                                 <Button onClick={handleShop}>
