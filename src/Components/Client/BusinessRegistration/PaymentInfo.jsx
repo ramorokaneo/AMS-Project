@@ -3,7 +3,6 @@ import { Grid, TextField, Box, MenuItem, Button } from "@mui/material";
 import background from "../../Global/images/Reed.jpg";
 import logo from "../../Global/images/logo.svg";
 import Banner from "../../Global/images/media bg-cover.png";
-import { Footer } from "../../Global/Footer";
 
 const PaymentInfo = () => {
   const currentYear = new Date().getFullYear();
@@ -120,7 +119,10 @@ const PaymentInfo = () => {
                 marginLeft: "80px",
                 marginBottom: "30px",
               }}>
-              <h2 style={{ color: "#000", textAlign: "left", fontSize:"32px" }}>PAYMENT INFO</h2>
+              <h2
+                style={{ color: "#000", textAlign: "left", fontSize: "32px" }}>
+                PAYMENT INFO
+              </h2>
               {/* <h6>inputs will be stored here</h6> */}
 
               <TextField
@@ -146,7 +148,7 @@ const PaymentInfo = () => {
                   //   backgroundColor: "dodgerblue",
                   width: "100%",
                   marginBottom: "10px",
-                  marginTop:"10px"
+                  marginTop: "10px",
                 }}
               />
               <TextField
@@ -178,7 +180,8 @@ const PaymentInfo = () => {
                 variant="contained"
                 style={{
                   width: "80%",
-                  padding: "15px",
+                  height: "10%",
+                  //   padding: "15px",
                   margin: "20px 0px",
                   background: "#072840",
                   borderRadius: "30px",
@@ -189,7 +192,6 @@ const PaymentInfo = () => {
           </Box>
         </Grid>
       </Grid>
-      {/* <Footer /> */}
     </div>
   );
 };
