@@ -2,7 +2,8 @@ import React from 'react';
 import { Card, CardContent, Container, Grid, Typography, Box } from '@mui/material';
 import Logo from "../../Global/images/Logo.png";
 import plane from "../../Global/images/plane.png";
-import biggerlion from "../../Global/images/bigger-lion.png"
+import biggerlion from "../../Global/images/bigger-lion.png";
+
 
 const AboutUs = () => {
   return (
@@ -86,7 +87,7 @@ const AboutUs = () => {
       <Typography variant="body2" color="text.primary" style={{ marginTop: '20px', marginRight: "71%"}}>
         Business Research and Youth Development Project
       </Typography>
-
+      
     
       <Typography paragraph style={{ marginLeft: '15px' }}></Typography>
 
@@ -143,7 +144,13 @@ const AboutUs = () => {
         </Box>
   </Grid>
 </Grid>
-<img src={biggerlion} alt="lion" style={{ width: '120%', marginTop: 0 }} />
+<Typography paragraph></Typography>
+
+<Typography variant="h4" color="#203E53">
+<strong>AMS aims to not only help businesses grow but also make a positive impact on society by nurturing local talent and fostering sustainable business growth.</strong>
+      </Typography>
+<img src={biggerlion} alt="lion" style={{ width: '150%', marginTop: 0, marginRight: "0%" }} />
+
     </Container>
   );
 };
