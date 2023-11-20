@@ -39,33 +39,21 @@ const SignUp = () => {
                 </Typography>
 
                 <form>
-                    <TextField
-                        id="standard-basic"
-                        label="Email"
-                        variant="standard"
-                        fullWidth
-                        size="small"
-                        required
-                    />
+                    <TextField id="standard-basic" label="Email" variant="standard" fullWidth size="small" required />
                     <p>
-                        <TextField
-                            id="outlined-password-input"
-                            label="Password"
-                            type="password"
-                            autoComplete="current-password"
-                            variant="standard"
-                            required
-                        />
+                        <TextField id="outlined-password-input" label="Password" type="password" autoComplete="current-password" variant="standard" required />
+
                     </p>
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        color="primary"
-                        fullWidth
-                        sx={{ mt: 2 }}
+                    <Button type="submit" variant="contained" fullWidth sx={{
+                        mt: 2, backgroundColor: '#000044', '&:hover': {
+                            backgroundColor: 'AppWorkspace',
+                        },
+                    }}
                     >
                         Sign Up
                     </Button>
+
+
                 </form>
             </Paper>
         </Box>
