@@ -10,7 +10,7 @@ export function Footer() {
       style={{
         backgroundColor: "#070F18",
         // border: "1px solid",
-        width: "100vw",
+        width: "100%",
         // height: "25vh",
         // padding: "5px", // Add padding for better spacing
       }}>
@@ -31,14 +31,16 @@ export function Footer() {
             alt="Marketing Services"
           />
 
-          <h2 style={{ fontSize: 15 }}>Marketing Services</h2>
-          <p style={{ fontSize: 10 }}>
+          <h2 style={{ fontSize: 15, color: "#FFF" }}>Marketing Services</h2>
+          <p style={{ fontSize: 10, color: "#FFF" }}>
             Welcome to AMS, where we specialize in building beautiful brands,
             marketing African businesses, and connecting them with a global
             customer base, driving sales of their exceptional products and
             services.
           </p>
-          <p className="atlegile-footer-email-text">atlegilemarketing.co.za</p>
+          <p style={{ color: "#fff" }} className="atlegile-footer-email-text">
+            atlegilemarketing.co.za
+          </p>
         </Grid>
         <Grid
           item
@@ -75,7 +77,7 @@ export function Footer() {
         }}>
         {/* Section 2 */}
         <div>
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", color: "#FFF" }}>
             Atlegile Marketing Solutions (Pty) Ltd eCommerce 2023
           </p>
         </div>

@@ -74,7 +74,7 @@ const PaymentInfo = () => {
                 height: "21vh",
                 width: "65vw",
                 paddingTop: "30vh",
-                marginLeft: "7px",
+                marginLeft: "10px",
                 marginRight: "2px",
               }}
             />
@@ -115,11 +115,12 @@ const PaymentInfo = () => {
                 justifyContent: "center",
                 textAlign: "center",
                 alignItems: "center",
-                width: "80%",
+                width: "75%",
                 // backgroundColor: "red",
-                marginLeft: "50px",
+                marginLeft: "80px",
+                marginBottom: "30px",
               }}>
-              <h2 style={{ color: "#000", textAlign: "left" }}>payment info</h2>
+              <h2 style={{ color: "#000", textAlign: "left", fontSize:"32px" }}>PAYMENT INFO</h2>
               {/* <h6>inputs will be stored here</h6> */}
 
               <TextField
@@ -145,6 +146,7 @@ const PaymentInfo = () => {
                   //   backgroundColor: "dodgerblue",
                   width: "100%",
                   marginBottom: "10px",
+                  marginTop:"10px"
                 }}
               />
               <TextField
@@ -176,7 +178,8 @@ const PaymentInfo = () => {
                 variant="contained"
                 style={{
                   width: "80%",
-                  marginTop: "10px",
+                  padding: "15px",
+                  margin: "20px 0px",
                   background: "#072840",
                   borderRadius: "30px",
                 }}>
@@ -185,8 +188,8 @@ const PaymentInfo = () => {
             </div>
           </Box>
         </Grid>
-      <Footer />
       </Grid>
+      {/* <Footer /> */}
     </div>
   );
 };
