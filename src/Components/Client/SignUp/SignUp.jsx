@@ -35,14 +35,14 @@ const SignUp = () => {
                         <Typography variant="h6" align="left" style={{ fontWeight: 'bolder' }} gutterBottom>
                             SIGN UP
                             <Button>
-
+                                SHOP  <ChevronRightTwoToneIcon />
                             </Button>
                         </Typography>
 
                         <form>
                             <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' required />
                             <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password" required />
-                            <Button type="submit" variant="contained" fullWidth sx={{ mt: 2, backgroundColor: '#030539' }}   >  SIGN UP </Button>
+                            <Button type="submit" variant="contained" fullWidth sx={{ mt: 2, backgroundColor: '#030539', borderRadius: '50px' }}   >  SIGN UP </Button>
                         </form>
 
                         <Typography variant="body2" align="center" sx={{ mt: 2 }}>
@@ -50,12 +50,12 @@ const SignUp = () => {
                         </Typography>
 
                         <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                            <Link href="/login" underline="none" sx={{ color: 'red', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: "30px" }}> SIGN UP WITH GOOGLE
+                            <Link href="/login" underline="none" sx={{ color: 'red', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: "5px" }}> SIGN UP WITH GOOGLE
                             </Link>
                         </Typography>
 
-                        <Box sx={{ textAlign: 'center', marginTop: '10%' }}>
-                            <Button style={{borderRadius: '30px', width: '500px'}} onClick={handleBusinessSignUp} variant="outlined">
+                        <Box sx={{ textAlign: 'center', marginTop: '15%' }}>
+                            <Button style={{ borderRadius: '30px', width: '500px' }} onClick={handleBusinessSignUp} variant="outlined">
                                 SIGN UP AS A BUSINESS
                                 <ChevronRightTwoToneIcon />
                             </Button>
