@@ -44,14 +44,18 @@ const SignUp = () => {
                         <TextField id="outlined-password-input" label="Password" type="password" autoComplete="current-password" variant="standard" required />
 
                     </p>
-                    <Button type="submit" variant="contained" fullWidth sx={{
-                        mt: 2, backgroundColor: '#000044', '&:hover': {
-                            backgroundColor: 'AppWorkspace',
-                        },
-                    }}
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        fullWidth
+                        sx={{
+                            mt: 2,
+                            backgroundColor: '#000044', 
+                        }}
                     >
-                        Sign Up
+                        SIGN UP
                     </Button>
+
 
 
                 </form>
