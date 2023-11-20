@@ -1,43 +1,7 @@
-// import React from 'react';
-// import { Box, Paper, TextField, Button, Typography } from '@mui/material';
-
-// const SignUp = () => {
-//     return (
-//         <Box
-//             sx={{
-//                 minHeight: '100vh',
-//                 display: 'flex',
-//                 justifyContent: 'center',
-//                 alignItems: 'center',
-//                 padding: '20px',
-//             }}
-//         >
-//             <Paper sx={{ padding: '40px', maxWidth: '400px', fontWeight: 'bold' }}>
-//                 <Typography variant="h7" align="left" gutterBottom>
-//                     SIGN UP
-//                 </Typography>
-
-//                 <form>
-//                     <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' required />
-
-//                     <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password" required />
-
-//                     <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2, backgroundColor: '#030539' }}   >
-//                         Sign Up
-//                     </Button>
-//                 </form>
-//             </Paper>
-//         </Box>
-//     );
-// };
-
-// export default SignUp;
-
-
-
 import React from 'react';
-import { Box, Paper, TextField, Button, Typography, Grid, Icon } from '@mui/material';
-import PersonAddIcon from '@mui/icons-material/PersonAdd'; 
+import { Box, Paper, TextField, Button, Typography, Grid } from '@mui/material';
+import signUpImage from '../../images/logo.png'; 
+
 const SignUp = () => {
     return (
         <Box
@@ -49,22 +13,26 @@ const SignUp = () => {
                 padding: '20px',
             }}
         >
-            <Paper sx={{ padding: '40px', maxWidth: '400px', fontWeight: 'bold' }}>
-                <Icon component={PersonAddIcon} fontSize="large" color="primary" />
-                <Typography variant="h6" align="center" gutterBottom>
-                    Sign Up
-                </Typography>
+            <Grid container justifyContent="center" spacing={2}>
+                <Grid item xs={12} sm={8} md={6} lg={4}>
+                    <Paper sx={{ padding: '40px' }}>
+                        <img src={signUpImage} alt="Sign Up Image" style={{ width: '100%', marginBottom: '20px', maxWidth: '300px' }} /> {/* Add your image with increased width */}
+                        <Typography variant="h6" align="center" gutterBottom>
+                            Sign Up
+                        </Typography>
 
-                <form>
-                    <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' required />
+                        <form>
+                            <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' required />
 
-                    <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password" required />
+                            <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password" required />
 
-                    <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2, backgroundColor: '#030539' }}   >
-                        Sign Up
-                    </Button>
-                </form>
-            </Paper>
+                            <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2, backgroundColor: '#030539' }}   >
+                                Sign Up
+                            </Button>
+                        </form>
+                    </Paper>
+                </Grid>
+            </Grid>
         </Box>
     );
 };
