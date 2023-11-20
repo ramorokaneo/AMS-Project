@@ -1,61 +1,3 @@
-// import React from 'react';
-// import { Box, Paper, TextField, Button, Typography } from '@mui/material';
-
-// const SignUp = () => {
-//     return (
-//         <Box
-//             sx={{
-//                 minHeight: '100vh',
-//                 display: 'flex',
-//                 justifyContent: 'center',
-//                 alignItems: 'center',
-//                 padding: '20px',
-//             }}
-//         >
-//             <Paper sx={{ padding: '40px', maxWidth: '400px', marginLeft: '900px',  }}>
-//                 <Typography variant="h6" align="left" gutterBottom>
-//                     SIGN UP
-//                 </Typography>
-
-//                 <form>
-//                     <TextField
-//                         fullWidth
-//                         label="Email"
-//                         variant="outlined"
-//                         margin="normal"
-//                         required
-//                     />
-
-//                     <TextField
-//                         fullWidth
-//                         label="Password"
-//                         variant="outlined"
-//                         margin="normal"
-//                         type="password"
-//                         required
-//                     />
-
-//                     <Button
-//                         type="submit"
-//                         variant="contained"
-//                         color="primary"
-//                         fullWidth
-//                         sx={{ mt: 2 }}
-//                     >
-//                         Sign Up
-//                     </Button>
-//                 </form>
-//             </Paper>
-//         </Box>
-//     );
-// };
-
-// export default SignUp;
-
-
-
-
-
 import React from 'react';
 import { Box, Paper, TextField, Button, Typography } from '@mui/material';
 
@@ -68,33 +10,18 @@ const SignUp = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 padding: '20px',
-                overflowY: 'hidden', 
-                overflowX: 'hidden'
             }}
         >
-            <Paper sx={{ padding: '40px', maxWidth: '400px', marginLeft: '900px' }}>
-                <Typography variant="h6" align="left" gutterBottom>
-                    SIGN UP
+            <Paper sx={{ padding: '40px', maxWidth: '400px', marginRight: 'auto' }}>
+                <Typography variant="h5" align="left" gutterBottom>
+                    Sign Up
                 </Typography>
 
                 <form>
-                    <TextField
-                        fullWidth
-                        label="Email"
-                        variant="outlined"
-                        margin="normal"
-                        required
-                    />
-
-                    <TextField
-                        fullWidth
-                        label="Password"
-                        variant="outlined"
-                        margin="normal"
-                        type="password"
-                        required
-                    />
-
+                    <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' required />
+                    <p>
+                        <TextField id="outlined-password-input" label="Password" type="password"  autoComplete="current-password" variant="standard" required/>
+                    </p>
                     <Button
                         type="submit"
                         variant="contained"
