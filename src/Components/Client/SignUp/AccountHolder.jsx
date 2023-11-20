@@ -8,5 +8,4 @@ const AccountHolder = () => {
     )
 };
 
-
 export default AccountHolder
