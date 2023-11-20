@@ -1,77 +1,72 @@
 import React from 'react';
-import { Box, Paper, TextField, Button, Typography } from '@mui/material';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    Container,
+    Grid,
+    Paper,
+    TextField,
+    Button,
+    Typography,
+} from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        padding: theme.spacing(2),
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+    form: {
+        display: 'flex',
+        flexDirection: 'column',
+        '& .MuiTextField-root': {
+            margin: theme.spacing(1),
+            width: '100%',
+        },
+    },
+}));
 
 const SignUp = () => {
-    return (
-        <Box
-            sx={{
-                minHeight: '100px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: '20px',
-            }}
-        >
-            <Paper
-                sx={{
-                    padding: '40px',
-                    width: '100%', 
-                    maxWidth: '400px',
-                    marginRight: '-675%',
-                    '@media (max-width: 1024px)': {
-                        // Styles for desktop screens
-                        maxWidth: '500px',
-                        padding: '60px',
-                    },
-                    '@media (max-width: 768px)': {
-                        // Styles for tablets and smaller screens (e.g., laptops)
-                        maxWidth: '300px',
-                        padding: '40px',
-                    },
-                    '@media (max-width: 480px)': {
-                        // Styles for mobile devices
-                        maxWidth: '250px',
-                        padding: '20px',
-                    },
-                }}
-            >
-                <Typography variant="h5" align="left" gutterBottom>
-                    Sign Up
-                </Typography>
+    const classes = useStyles();
 
-                <form>
-                    <TextField
-                        id="standard-basic"
-                        label="Email"
-                        variant="standard"
-                        fullWidth
-                        size="small"
-                        required
-                    />
-                    <p>
+    return (
+        <div className={classes.root}>
+            <Container maxWidth="md">
+                <Paper className={classes.paper}>
+                    <Typography variant="h4" gutterBottom>
+                        Sign Up
+                    </Typography>
+                    <form className={classes.form} noValidate autoComplete="off">
                         <TextField
+                            required
+                            id="outlined-required"
+                            label="Username"
+                            variant="outlined"
+                        />
+                        <TextField
+                            required
                             id="outlined-password-input"
                             label="Password"
                             type="password"
-                            autoComplete="current-password"
-                            variant="standard"
-                            required
+                            variant="outlined"
                         />
-                    </p>
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        fullWidth
-                        sx={{
-                            mt: 2,
-                            backgroundColor: '#000044',
-                        }}
-                    >
-                        SIGN UP
-                    </Button>
-                </form>
-            </Paper>
-        </Box>
+                        <TextField
+                            required
+                            id="outlined-email-input"
+                            label="Email"
+                            type="email"
+                            variant="outlined"
+                        />
+                        <Button variant="contained" color="primary">
+                            Sign Up
+                        </Button>
+                    </form>
+                </Paper>
+            </Container>
+        </div>
     );
 };
 
