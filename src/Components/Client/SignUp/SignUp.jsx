@@ -34,9 +34,12 @@ const SignUp = () => {
                         </Box>
                         <Typography variant="h6" align="left" style={{ fontWeight: 'bolder' }} gutterBottom>
                             SIGN UP
-                            <Button>
-                                SHOP  <ChevronRightTwoToneIcon />
-                            </Button>
+                            <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '-25px' }}>
+                                <Button onClick={handleShop}>
+                                    SHOP  <ChevronRightTwoToneIcon />
+                                </Button>
+                            </Box>
+
                         </Typography>
 
                         <form>
