@@ -3,6 +3,7 @@ import { Grid, TextField, Box, MenuItem, Button } from "@mui/material";
 import background from "../../Global/images/Reed.jpg";
 import logo from "../../Global/images/logo.svg";
 import Banner from "../../Global/images/media bg-cover.png";
+import { Footer } from "../../Global/Footer";
 
 const PaymentInfo = () => {
   const currentYear = new Date().getFullYear();
@@ -184,6 +185,7 @@ const PaymentInfo = () => {
             </div>
           </Box>
         </Grid>
+      <Footer />
       </Grid>
     </div>
   );

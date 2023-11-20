@@ -9,17 +9,25 @@ export function Footer() {
       container
       style={{
         backgroundColor: "#070F18",
+        // border: "1px solid",
         width: "100vw",
         // height: "25vh",
-        padding: "20px", // Add padding for better spacing
+        // padding: "5px", // Add padding for better spacing
       }}>
-      <Grid item lg={12} style={{ display: "flex", flexDirection: "row" }}>
+      <Grid
+        item
+        lg={12}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          //   border: "1px solid yellow",
+        }}>
         {/* Section 1 */}
-        <Grid item lg={6} style={{ padding: "10px" , border:"1px solid"}}></Grid>
-        <Grid item lg={6} style={{ padding: "10px" ,border:"1px solid"}}>
+        <Grid item lg={6} style={{ padding: "2px" }}></Grid>
+        <Grid item lg={6} style={{ padding: "2px" }}>
           <img
             src={shadowLogo}
-            style={{ width: "50%", paddingTop: 50 }}
+            style={{ width: "50%", paddingTop: 40 }}
             alt="Marketing Services"
           />
 
@@ -36,12 +44,12 @@ export function Footer() {
           item
           lg={6}
           style={{
-            display: "flex", 
-            border:"1px solid",
+            display: "flex",
+            // border: "1px solid",
             flexDirection: "column",
             justifyContent: "center", // Align items vertically at the center
           }}>
-          <div>
+          <div style={{ marginLeft: "20px" }}>
             <a href="#">
               <h6 style={{ color: "#FFF" }}>ORDER HISTORY</h6>
             </a>
@@ -53,7 +61,7 @@ export function Footer() {
             </a>
           </div>
         </Grid>
-        <Grid item lg={6} style={{ padding: "10px" ,border:"1px solid" }}>
+        <Grid item lg={6} style={{ padding: "2px" }}>
           {/* Use the imported image */}
         </Grid>
       </Grid>
@@ -76,14 +84,20 @@ export function Footer() {
         item
         lg={2}
         style={{
-          padding: "10px",
+          //   padding: "1px",
           background: "#070F18",
           Opacity: 0.3,
         }}>
         {/* Use the imported image */}
         <img
           src={lion}
-          style={{ width: "100%", opacity: 0.3, height: 120 }}
+          style={{
+            width: "100%",
+            opacity: 0.3,
+            height: 210,
+            position: "relative",
+            top: -50,
+          }}
           alt="lion-image"
         />
       </Grid>
