@@ -18,7 +18,7 @@ const SignUp = () => {
     };
 
     const handleSignUp = () => {
-        navigate("./mainacc");
+        navigate("./accountholder");
     }
 
     return (

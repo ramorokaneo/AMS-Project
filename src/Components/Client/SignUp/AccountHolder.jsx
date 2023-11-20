@@ -1,10 +1,12 @@
 import React from "react";
 
-const AltContact = () => {
+
+const AccountHolder = () => {
     return (
         <>
         </>
     )
 };
 
-export default AltContact;
+
+export default AccountHolder

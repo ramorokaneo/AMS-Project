@@ -7,6 +7,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignUp />} />
+        <Route path='accountholder' element={<AccountHolder />} />
+        <Route path='/altcontact' element={<AltContact />} />
       </Routes>
     </BrowserRouter>
   );
