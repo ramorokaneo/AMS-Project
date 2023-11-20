@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Grid, TextField, Box, MenuItem, Button } from "@mui/material";
 import background from "../../Global/images/Reed.jpg";
 import logo from "../../Global/images/logo.svg";
+import Banner from "../../Global/images/media bg-cover.png";
 
 const PaymentInfo = () => {
   const currentYear = new Date().getFullYear();
@@ -30,15 +31,54 @@ const PaymentInfo = () => {
         height: "100vh",
         // display: "flex",
       }}>
-      <Grid container style={{ width: "100%" }}>
+      <Grid
+        container
+        style={{
+          width: "100%",
+          marginBottom: "-10vh",
+          //   border: "1px solid green",
+        }}>
         <Grid
           item
           lg={8}
           style={{
             // border: "1px solid",
             // backgroundColor: "blue",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
             width: "100%",
-          }}></Grid>
+          }}>
+          <Grid
+            Container
+            lg={6}
+            style={{
+              //   backgroudColor: "blue",
+              width: "100vw",
+              //   border: "1px solid yellow",
+            }}></Grid>
+          <Grid
+            Container
+            lg={6}
+            style={{
+              //   backgroudColor: "yellow",
+              width: "100vw",
+              //   border: "1px solid yellow",
+              marginBottom: "-8px",
+            }}>
+            {/* <h2>helow world</h2> */}
+            <img
+              src={Banner}
+              style={{
+                height: "21vh",
+                width: "65vw",
+                paddingTop: "30vh",
+                marginLeft: "5px",
+                marginRight: "2px",
+              }}
+            />
+          </Grid>
+        </Grid>
 
         <Grid
           item
@@ -46,16 +86,20 @@ const PaymentInfo = () => {
           style={{
             // border: "1px solid red",
             backgroundColor: "#fff",
+            marginLeft: "-10px",
             width: "100%",
             height: "98vh",
-            // marginRight: "5px",
+            // marginLeft: "2px",
             alignSelf: "center",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-evenly",
+            justifyContent: "space-between",
           }}>
           <Grid>
-            <img src={logo} style={{ height: "8vh", width: "80%" }} />
+            <img
+              src={logo}
+              style={{ height: "9vh", width: "90%", paddingTop: "30vh" }}
+            />
           </Grid>
           <Box
             component="form"
@@ -69,7 +113,10 @@ const PaymentInfo = () => {
               style={{
                 justifyContent: "center",
                 textAlign: "center",
+                alignItems: "center",
                 width: "80%",
+                // backgroundColor: "red",
+                marginLeft: "50px",
               }}>
               <h2 style={{ color: "#000", textAlign: "left" }}>payment info</h2>
               {/* <h6>inputs will be stored here</h6> */}
@@ -130,7 +177,7 @@ const PaymentInfo = () => {
                   width: "80%",
                   marginTop: "10px",
                   background: "#072840",
-                  borderRadius: "30px"
+                  borderRadius: "30px",
                 }}>
                 continue
               </Button>
