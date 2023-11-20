@@ -74,7 +74,7 @@ const PaymentInfo = () => {
                 height: "21vh",
                 width: "65vw",
                 paddingTop: "30vh",
-                marginLeft: "5px",
+                marginLeft: "7px",
                 marginRight: "2px",
               }}
             />
