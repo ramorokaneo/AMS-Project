@@ -3,15 +3,18 @@ import { Card, CardContent, Container, Grid, Typography, Box } from '@mui/materi
 import Logo from "../../Global/images/Logo.png";
 import plane from "../../Global/images/plane.png";
 import biggerlion from "../../Global/images/bigger-lion.png";
+import Nav from "../../Global/Nav";
+import Footer from '../../Global/Footer';
 
 
-const AboutUs = () => {
+ const AboutUs = () => {
   return (
-    <Container style={{ backgroundColor: 'white' }}>
-        
-      <img src={Logo} alt="Company Logo" style={{ width: '15%', marginTop: '20px' }} />
+    <Container style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+    <Nav />
+        <Nav/>
+      <img src={Logo} alt="Company Logo" style={{ width: '15%', marginTop: '10%', marginLeft: "100%" }} />
 
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h3" gutterBottom > 
         <strong>ATLEGILE MARKETING SOLUTIONS</strong>
       </Typography>
 
@@ -28,7 +31,7 @@ const AboutUs = () => {
 
       <Typography paragraph></Typography>
 
-      <Grid container spacing={0.5} justifyContent="center">
+      <Grid container spacing={0.5} justifyContent="center" style={{ marginLeft: "100%" }}>
       
         <Grid item xs={12} sm={6} md={4}>
           <Card sx={{ border: '1px solid gray', borderRadius: 0, height: '100%' }}>
@@ -92,7 +95,7 @@ const AboutUs = () => {
       <Typography paragraph style={{ marginLeft: '15px' }}></Typography>
 
       
-      <Typography variant="h5" color="text.primary" style={{ marginLeft: '15px' }}>
+      <Typography variant="h5" color="text.primary" style={{ marginLeft: '15px', marginTop: "10%", marginBottom: "20px"}}>
       <strong> AMS IS GUIDED BY SEVERAL CORE VALUES</strong>
       </Typography> 
       <Grid container spacing={1} justifyContent="center" alignItems="center">
@@ -150,7 +153,9 @@ const AboutUs = () => {
 <strong>AMS aims to not only help businesses grow but also make a positive impact on society by nurturing local talent and fostering sustainable business growth.</strong>
       </Typography>
 <img src={biggerlion} alt="lion" style={{ width: '150%', marginTop: 0, marginRight: "0%" }} />
-
+<Container >
+        <Footer />
+      </Container>
     </Container>
   );
 };

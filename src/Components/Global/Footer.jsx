@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import lion from "../Global/images/BigLion..png"; 
 import shadowLogo from "./images/Shadow_Logo.png";
 
-export function Footer() {
+export default function Footer() {
   return (
     <Grid
       container

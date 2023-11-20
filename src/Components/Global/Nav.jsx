@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <Typography variant="h6">
             <img
-              src="images/logo.png"
+              src="Global/images/Logo.png"
               alt="Your Logo"
               style={{ height: "40px", marginRight: "10px" }}
             />
