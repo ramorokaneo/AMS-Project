@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import AlternativeContact from './Components/Client/SignUp/AlternativeContact';
 // import SignIn from './Components/Client/SignIn/Signin';
 import BusinessRegistration from './Components/Client/BusinessRegistration/BusinessRegistration';
-// import AddProductsAndServices from './Components/Client/BusinessRegistration/AddProductsAndServices';
+import AddProductsAndServices from './Components/Client/BusinessRegistration/AddProductsAndServices';
 import PaymentInfo from "./Components/Client/BusinessRegistration/PaymentInfo";
 // import ProductDetails from './Components/Client/ProductDetails/ProductDetails';
 // import BusinessProducts from './Components/Client/ProductDetails/BusinessProducts';
@@ -33,7 +33,7 @@ function App() {
         <Route path='/altnative-contact' element={<AlternativeContact/>}/>
         <Route path='/signin' element={<SignIn/>}/> */}
         <Route path='/business-reg' element={<BusinessRegistration/>}/>
-        {/* <Route path='/add-products-and-services' element={<AddProductsAndServices/>}/> */}
+        <Route path='/add-products-and-services' element={<AddProductsAndServices/>}/>
         <Route path="/payment-info" element={<PaymentInfo />} />
         {/* <Route path='/product-details' element={<ProductDetails/>}/> */}
         {/* <Route path='/business-products' element={<BusinessProducts/>}/> */}

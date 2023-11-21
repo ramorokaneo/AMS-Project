@@ -89,6 +89,8 @@ const BusinessRegistration = () => {
     "Fashion",
   ];
 
+
+
   return (
     <>
       <div>
