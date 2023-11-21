@@ -4,16 +4,42 @@ import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-
+import { useNavigate } from "react-router-dom";
 import background from "../../Global/images/Reed.jpg";
 import logo from "../../Global/images/logo.svg";
 import Banner from "../../Global/images/media bg-cover.png";
 
 const BusinessRegistration = () => {
+  const [businessName, setBusinessName] = useState("");
+  const [selectedRole, setSelectedRole] = useState("");
+  const [regNumber, setRegNumber] = useState("");
+  const [website, setWebsite] = useState("");
+  const [location, setLocation] = useState("");
   const [selectedBusinessType, setSelectedBusinessType] = useState("");
   const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [bio, setBio] = useState("");
 
-  const handlechange = () => {};
+  const navigate = useNavigate();
+
+  const handlechange = () => {
+    // Assuming you have set up state for each field
+    const isFormValid =
+      !!businessName &&
+      !!selectedRole &&
+      !!regNumber &&
+      !!location &&
+      !!selectedBusinessType &&
+      !!selectedIndustry &&
+      !!phoneNumber;
+
+    if (isFormValid) {
+      navigate("/add-products-and-services");
+    } else {
+      alert("Please fill in all required fields");
+      // or any other way to notify the user about the missing fields
+    }
+  };
 
   const emptyOption = [""];
 
@@ -110,7 +136,6 @@ const BusinessRegistration = () => {
               item
               lg={8}
               style={{
-                // backgroundColor: "blue",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -195,20 +220,24 @@ const BusinessRegistration = () => {
                       shrink: true,
                     }}
                     style={{ width: "100%" }}
+                    required
+                    value={businessName}
+                    onChange={(e) => setBusinessName(e.target.value)}
                   />
                   <br />
                   <TextField
-                    id="outlined-select-currency"
+                    id="outlined"
                     select
                     label="Role"
                     variant="standard"
-                    value={selectedBusinessType}
-                    onChange={(e) => setSelectedBusinessType(e.target.value)}
+                    value={selectedRole}
+                    onChange={(e) => setSelectedRole(e.target.value)}
                     style={{
                       width: "100%",
                       textAlign: "left",
                       marginTop: "10px",
-                    }}>
+                    }}
+                    required>
                     {roleOptions.map((option) => (
                       <MenuItem key={option} value={option}>
                         {option}
@@ -229,6 +258,9 @@ const BusinessRegistration = () => {
                       width: "100%",
                       marginTop: "10px",
                     }}
+                    required
+                    value={regNumber}
+                    onChange={(e) => setRegNumber(e.target.value)}
                   />
                   <TextField
                     id="outlined-number"
@@ -239,6 +271,8 @@ const BusinessRegistration = () => {
                       shrink: true,
                     }}
                     style={{ width: "100%", marginTop: "10px" }}
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
                   />
                   <TextField
                     id="outlined-number"
@@ -249,6 +283,9 @@ const BusinessRegistration = () => {
                       shrink: true,
                     }}
                     style={{ width: "100%", marginTop: "10px" }}
+                    required
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
                   />
                   <TextField
                     id="outlined-select-currency"
@@ -262,7 +299,8 @@ const BusinessRegistration = () => {
                       marginTop: "5px",
                       marginRight: "10px",
                       textAlign: "left",
-                    }}>
+                    }}
+                    required>
                     {businessTypeOptions.map((option) => (
                       <MenuItem key={option} value={option}>
                         {option}
@@ -280,7 +318,8 @@ const BusinessRegistration = () => {
                       width: "48%",
                       marginTop: "5px",
                       textAlign: "left",
-                    }}>
+                    }}
+                    required>
                     {industryOptions.map((option) => (
                       <MenuItem key={option} value={option}>
                         {option}
@@ -296,6 +335,9 @@ const BusinessRegistration = () => {
                       shrink: true,
                     }}
                     style={{ width: "100%", marginTop: "10px" }}
+                    required
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                   />
                   <TextField
                     id="outlined-number"
@@ -306,6 +348,8 @@ const BusinessRegistration = () => {
                       shrink: true,
                     }}
                     style={{ width: "100%", marginTop: "10px" }}
+                    value={bio}
+                    onChange={(e) => setBio(e.target.value)}
                   />
                   {/* Add other TextField components as needed */}
                   <Button
