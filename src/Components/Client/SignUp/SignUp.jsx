@@ -62,19 +62,6 @@ const SignUp = () => {
                             </Link>
                         </Typography>
 
-
-                        {/* <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                            <Link href="/login" underline="none"> ALREADY HAVE AN ACCOUNT? </Link>
-                        </Typography>
-
-                        <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-                            <p>
-
-                                <Link href="/login" underline="none" sx={{ color: 'red', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: "5px", marginTop: '-20px' }}> SIGN UP WITH GOOGLE
-                                </Link>
-                            </p>
-                        </Typography> */}
-
                         <Box sx={{ textAlign: 'center', marginTop: '15%' }}>
                             <Button style={{ borderRadius: '30px', width: '500px' }} onClick={handleBusinessSignUp} variant="outlined">
                                 SIGN UP AS A BUSINESS
