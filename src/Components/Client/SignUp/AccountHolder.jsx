@@ -3,6 +3,8 @@ import { Box, Paper, TextField, Button, Typography, Grid } from '@mui/material';
 import logoImage from '../../images/logo.png';
 
 const AccountHolder = () => {
+
+
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '20px', }}
         >
@@ -22,15 +24,17 @@ const AccountHolder = () => {
                         </Box>
 
                         <form>
-                            <TextField fullWidth label="Full Name" variant="standard" margin="normal" />
+                            <TextField fullWidth label="Full Name" variant="standard" margin="small" />
 
-                            <TextField fullWidth label="Email" variant="standard" margin="normal" required />
+                            <TextField fullWidth label="Surname" variant="standard" margin="small" />
 
-                            <TextField fullWidth label="Phone Number" variant="outlined" margin="normal" required />
+                            <TextField fullWidth label="Phone Number" variant="standard" margin="normal" />
 
-                            <TextField fullWidth label="Address" variant="outlined" margin="normal" multiline rows={3} required />
+                            <TextField fullWidth label="Email" variant="standard" margin="normal" />
 
-                            <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2 }} > Submit </Button>
+                            <TextField fullWidth label="Location" variant="standard" margin="normal" />
+
+                            <Button type="submit" variant="contained" fullWidth sx={{ mt: 2, borderRadius: "30px", backgroundColor: "#072840" }} > CONTINUE </Button>
 
 
                         </form>

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Box, Paper, TextField, Button, Typography, Grid, Link } from '@mui/material';
+import { Box, Paper, TextField, Button, Typography, Grid, Link, IconButton } from '@mui/material';
 import signUpImage from '../../images/logo.png';
 import ChevronRightTwoToneIcon from '@mui/icons-material/ChevronRightTwoTone';
 import { useNavigate } from 'react-router-dom';
 
 
 const SignUp = () => {
+    const handleClickShowPassword = () => setShowPassword((show) => !show);
+
 
     const navigate = useNavigate();
 
@@ -48,8 +50,16 @@ const SignUp = () => {
                         </Typography>
 
                         <form>
-                            <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small'/>
-                            <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password"/>
+                            <TextField id='standard-basic' label="Email" variant='standard' fullWidth size='small' />
+                            <TextField fullWidth id='standard-basic' label="Password" variant='standard' size='small' type="password">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                />
+                                    {showPassword ? <VisibilityOff /> : <Visibility />}</TextField>
+
+
                             <Button type="submit" variant="contained" fullWidth sx={{ mt: 2, backgroundColor: '#030539', borderRadius: '50px' }} onClick={handleSignUp}  >  SIGN UP </Button>
                         </form>
 
