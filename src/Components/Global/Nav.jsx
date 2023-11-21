@@ -1,6 +1,13 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import { AppBar, Toolbar, IconButton, Typography, Button } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Button,
+  Box,
+} from "@mui/material";
 import { ShoppingCart as ShoppingCartIcon } from "@mui/icons-material";
 // import { useFetchProfileData } from "../../hooks/useFetchUsers";
 
@@ -9,7 +16,7 @@ const Navbar = () => {
   //   const { userData } = useFetchProfileData(uid);
   const userData = null;
   return (
-    <AppBar style={{ backgroundColor: "white" }}>
+    <Box sx={{ backgroundColor: "white", display: "block" }}>
       <Toolbar sx={{ color: "#252b42" }}>
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <Typography variant="h6">
@@ -177,7 +184,7 @@ const Navbar = () => {
           )}
         </div>
       </Toolbar>
-    </AppBar>
+    </Box>
   );
 };
 

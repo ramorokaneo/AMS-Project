@@ -1,7 +1,4 @@
-// import React from "react";
 import { Box, TextField, IconButton } from "@mui/material";
-import FilterIcon from "@mui/icons-material/Filter";
-import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = () => {
   const handleFilterIconClick = () => {
@@ -13,12 +10,24 @@ const SearchBar = () => {
   };
 
   return (
-    <Box className="search-bar-container">
+    <Box
+      className="search-bar-container"
+      size="100%"
+      sx={{
+        width: " 100%",
+        height: "13rem",
+        backgroundColor: "#070f18",
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <img
         src="images/left_lion.png"
         alt="Shop 1"
-        width={200}
-        height={150}
+        width={250}
+        height={205}
         style={{
           position: "absolute",
           bottom: 0,
@@ -27,40 +36,74 @@ const SearchBar = () => {
       />
       <Box
         className="search-bar-body"
-        padding={5}
-        style={{
+        // padding={0}
+        sx={{
+          // backgroundColor: "red",
+          width: "40vw",
+          height: "13rem",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <img src="images/logo2.png" alt="AMS COMPANY" width={80} height={80} />
-        <TextField
-          id="search-input"
-          label="Search"
-          value=""
-          onChange={(event) => {
-            console.log("Search text changed:", event.target.value);
-          }}
+        <img
+          src="images/logo2.png"
+          alt="AMS COMPANY"
           style={{
-            width: "60%",
-            marginBottom: 8,
+            // marginTop: "1px",
+            marginTop: 20,
+            height: "50px",
+            color: "white",
+            marginBottom: "50px",
           }}
         />
-        <Box className="icons-container">
-          <IconButton onClick={handleFilterIconClick}>
-            <FilterIcon />
-          </IconButton>
-          <IconButton onClick={handleSearchIconClick}>
-            <SearchIcon />
-          </IconButton>
+        <Box
+          style={{
+            padding: "10px",
+            width: "100%",
+            backgroundColor: "white",
+            display: "flex",
+            flexDirection: "row",
+            height: "60px",
+          }}
+        >
+          <TextField
+            id="search-input"
+            label="Search..."
+            value=""
+            onChange={(event) => {
+              console.log("Search text changed:", event.target.value);
+            }}
+            sx={{
+              marginBottom: 8,
+              fontSize: "16px",
+              width: "80%",
+              height: "30px",
+            }}
+            hiddenLabel
+            defaultValue="Small"
+            size="small"
+            variant="standard"
+          />
+          <Box
+            className="icons-container"
+            sx={{ display: "flex", justifyContent: "space-around" }}
+          >
+            <IconButton onClick={handleFilterIconClick}>
+              <img src="/icons/filter.svg" alt="img filter" />
+            </IconButton>
+            <IconButton onClick={handleSearchIconClick}>
+              <img src="/icons/search-status.svg" alt="img search" />
+            </IconButton>
+          </Box>
         </Box>
       </Box>
       <img
         src="images/right_lion.png"
         alt="Shop 2"
-        width={200}
-        height={150}
+        width={250}
+        height={205}
         style={{
           position: "absolute",
           bottom: 0,
