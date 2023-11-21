@@ -22,4 +22,11 @@ export const COLORS = {
     disabledPrimaryColor: "#8EC2F2",
     sideNavBackgroundColor: "#F5F5F5",
     BrightsLightGrey: "#B7B9BC",
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> d28f0eac86d57b661d04f72c73afc45e1cb0b1a8

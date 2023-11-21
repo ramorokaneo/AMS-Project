@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Card, CardContent, Container, Grid, Typography, Box } from '@mui/material';
 import Logo from "../../Global/images/Logo.png";
@@ -178,3 +179,14 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+=======
+// import React from 'react'
+
+function AboutUs() {
+  return (
+    <div>AboutUs</div>
+  )
+}
+
+export default AboutUs
+>>>>>>> d28f0eac86d57b661d04f72c73afc45e1cb0b1a8
