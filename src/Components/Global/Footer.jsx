@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import lion from "../Global/images/BigLion..png"; // Make sure the path is correct
 import shadowLogo from "./images/Shadow_Logo.png";
 
+
 export function Footer() {
   return (
     <Grid
@@ -103,6 +104,7 @@ export function Footer() {
           alt="lion-image"
         />
       </Grid>
+
     </Grid>
   );
 }
