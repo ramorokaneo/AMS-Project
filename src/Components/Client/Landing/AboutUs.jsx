@@ -8,14 +8,14 @@ import Footer from '../../Global/Footer';
 
 const AboutUs = () => {
   return (
-<Container style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+    <Container sx={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
       <Nav />
-      <Container style={{ margin: 'auto', textAlign: 'center' }}> {/* Center the content horizontally */}
-    <img src={Logo} alt="Company Logo" style={{ width: '15%', marginTop: '10%' }} />
-    <Typography variant="h3" gutterBottom > 
-      <strong>ATLEGILE MARKETING SOLUTIONS</strong>
-    </Typography>
-  </Container>
+      <Container sx={{ margin: 'auto', textAlign: 'center', marginTop: '10%' }}>
+        <img src={Logo} alt="Company Logo" sx={{ width: '15%' }} />
+        <Typography variant="h3" gutterBottom>
+          <strong>ATLEGILE MARKETING SOLUTIONS</strong>
+        </Typography>
+      </Container>
 
       <Container>
         <Typography paragraph></Typography>
@@ -78,17 +78,16 @@ const AboutUs = () => {
       </Container>
 
       <Container>
-        <img src={plane} alt="Description of the image" style={{ width: '100%', marginTop: '20px' }} />
+        <img src={plane} alt="Description of the image" sx={{ width: '100%', marginTop: '20px' }} />
         <Typography paragraph></Typography>
-        <Typography variant="body2" color="text.primary" style={{ marginTop: '20px' }}>
+        <Typography variant="body2" color="text.primary" sx={{ marginTop: '20px' }}>
           Business Research and Youth Development Project
         </Typography>
-        <Typography paragraph style={{ marginLeft: '15px' }}></Typography>
+        <Typography paragraph sx={{ marginLeft: '15px' }}></Typography>
       </Container>
 
-      {/* Core Values Container */}
       <Container>
-        <Typography variant="h5" color="text.primary" style={{ marginLeft: '15px', marginTop: "10%", marginBottom: "20px"}}>
+        <Typography variant="h5" color="text.primary" sx={{ marginLeft: '15px', marginTop: "10%", marginBottom: "20px"}}>
           <strong> AMS IS GUIDED BY SEVERAL CORE VALUES</strong>
         </Typography> 
         <Grid container spacing={1} justifyContent="center" alignItems="center">
@@ -143,22 +142,37 @@ const AboutUs = () => {
         <Typography paragraph></Typography>
       </Container>
 
-      {/* Impact Statement Container */}
       <Container>
         <Typography variant="h4" color="#203E53">
           <strong>AMS aims to not only help businesses grow but also make a positive impact on society by nurturing local talent and fostering sustainable business growth.</strong>
         </Typography>
       </Container>
 
-      {/* Image Container */}
       <Container>
-        <img src={biggerlion} alt="lion" style={{ width: '150%' }} />
+        <img src={biggerlion} alt="lion" sx={{ width: '150%' }} />
       </Container>
 
-      {/* Footer Container */}
       <Container>
         <Footer />
       </Container>
+
+      <style>{`
+        @media (max-width: 768px) {
+          /* Adjust styles for smaller screens here */
+          /* Example: */
+          /* .your-class {
+               width: 100%;
+          } */
+        }
+
+        @media (min-width: 769px) {
+          /* Adjust styles for larger screens here */
+          /* Example: */
+          /* .your-class {
+               width: 50%;
+          } */
+        }
+      `}</style>
     </Container>
   );
 };

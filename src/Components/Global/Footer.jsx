@@ -10,7 +10,7 @@ export default function Footer() {
       style={{
         backgroundColor: "#070F18",
         // border: "1px solid",
-        width: "200%",
+        width: "100%",
         
         margin: 0, 
       }}>
