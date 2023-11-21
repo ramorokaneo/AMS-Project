@@ -1,6 +1,6 @@
 // import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Landing from './Components/Client/Landing/Landing';
+import Landing from "./Components/Client/Landing/Landing";
 import AboutUs from "./Components/Client/Landing/AboutUs";
 // import SignUp from './Components/Client/SignUp/SignUp';
 // import TellUsAboutYourself from './Components/Client/SignUp/TellUsAboutYourself';
@@ -26,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path='/' element={<Landing/>}/> */}
+        <Route path="/" element={<Landing />} />
         <Route path="/aboutus" element={<AboutUs />} />
         {/* <Route path='/signup' element={<SignUp/>}/>
         <Route path='/tellus' element={<TellUsAboutYourself/>}/>

@@ -55,7 +55,10 @@ const Navbar = () => {
               </Button>
               <Button
                 sx={{
+                  transition: "backgroundCcolor 0.3s, color 0.3s",
+                  border: "1px solid #252b42",
                   borderRadius: "25px",
+                  marginLeft: "10px",
                   "&:hover": {
                     backgroundColor: "#252b42",
                     borderRadius: "25px",
@@ -70,7 +73,11 @@ const Navbar = () => {
               </Button>
               <Button
                 sx={{
+                  transition: "backgroundCcolor 0.3s, color 0.3s",
+                  border: "1px solid #252b42",
                   borderRadius: "25px",
+                  marginLeft: "10px",
+
                   "&:hover": {
                     backgroundColor: "#252b42",
                     borderRadius: "25px",
