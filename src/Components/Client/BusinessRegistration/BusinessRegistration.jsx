@@ -207,7 +207,7 @@ const BusinessRegistration = () => {
                     style={{
                       width: "100%",
                       textAlign: "left",
-                      marginTop: "5px",
+                      marginTop: "10px",
                     }}>
                     {roleOptions.map((option) => (
                       <MenuItem key={option} value={option}>
@@ -227,7 +227,7 @@ const BusinessRegistration = () => {
                     }}
                     style={{
                       width: "100%",
-                      marginTop: "5px",
+                      marginTop: "10px",
                     }}
                   />
                   <TextField
@@ -238,7 +238,7 @@ const BusinessRegistration = () => {
                     InputLabelProps={{
                       shrink: true,
                     }}
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", marginTop: "10px" }}
                   />
                   <TextField
                     id="outlined-number"
@@ -248,7 +248,7 @@ const BusinessRegistration = () => {
                     InputLabelProps={{
                       shrink: true,
                     }}
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", marginTop: "10px" }}
                   />
                   <TextField
                     id="outlined-select-currency"
@@ -295,7 +295,7 @@ const BusinessRegistration = () => {
                     InputLabelProps={{
                       shrink: true,
                     }}
-                    style={{ width: "100%", marginTop: "8px" }}
+                    style={{ width: "100%", marginTop: "10px" }}
                   />
                   <TextField
                     id="outlined-number"
@@ -305,7 +305,7 @@ const BusinessRegistration = () => {
                     InputLabelProps={{
                       shrink: true,
                     }}
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", marginTop: "10px" }}
                   />
                   {/* Add other TextField components as needed */}
                   <Button
