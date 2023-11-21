@@ -1,8 +1,10 @@
 // import React from 'react'
 // import SearchBar from "../../Landing/SearchBar";
-import Explore from "../../Landing/explore";
+// import Explore from "../../Shaun/explore";
+import SearchBar from "../../Shaun/SearchBar";
+
 function Landing() {
-  return <Explore />;
+  return <SearchBar />;
 }
 
 export default Landing;

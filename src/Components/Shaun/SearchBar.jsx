@@ -1,5 +1,5 @@
 // import React from "react";
-import { Box, TextField, Image, IconButton } from "@mui/material";
+import { Box, TextField, IconButton } from "@mui/material";
 import FilterIcon from "@mui/icons-material/Filter";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -14,8 +14,8 @@ const SearchBar = () => {
 
   return (
     <Box className="search-bar-container">
-      <Image
-        src="./images/left_lion.png"
+      <img
+        src="images/left_lion.png"
         alt="Shop 1"
         width={200}
         height={150}
@@ -34,12 +34,7 @@ const SearchBar = () => {
           alignItems: "center",
         }}
       >
-        <Image
-          src="./images/logo2.png"
-          alt="AMS COMPANY"
-          width={80}
-          height={80}
-        />
+        <img src="images/logo2.png" alt="AMS COMPANY" width={80} height={80} />
         <TextField
           id="search-input"
           label="Search"
@@ -61,8 +56,8 @@ const SearchBar = () => {
           </IconButton>
         </Box>
       </Box>
-      <Image
-        src="./images/right_lion.png"
+      <img
+        src="images/right_lion.png"
         alt="Shop 2"
         width={200}
         height={150}
