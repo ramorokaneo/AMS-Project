@@ -48,12 +48,28 @@ const Explore = () => {
           disableElevation
           style={{
             backgroundColor: "#027e57",
-            width: 100,
-            height: 100,
+            width: 90,
+            height: 90,
             borderRadius: "50%",
           }}
         >
-          Support
+          <div
+            style={{
+              backgroundColor: "red",
+              height: "4.6rem",
+              width: "4.6rem",
+              color: "white",
+              /* align-self: center, */
+              /* padding: 0.5rem, */
+              borderRadius: "50%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p style={{ fontSize: 14 }}>Support</p>
+          </div>
         </Button>
       </Box>
     </Box>
