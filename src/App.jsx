@@ -1,7 +1,7 @@
 // import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import Landing from './Components/Client/Landing/Landing';
-import AboutUs from './Components/Client/Landing/AboutUs';
+// import AboutUs from './Components/Client/Landing/AboutUs';
 // import SignUp from './Components/Client/SignUp/SignUp';
 // import TellUsAboutYourself from './Components/Client/SignUp/TellUsAboutYourself';
 // import AlternativeContact from './Components/Client/SignUp/AlternativeContact';
@@ -21,7 +21,7 @@ import AboutUs from './Components/Client/Landing/AboutUs';
 // import DeliveryAndChatSystem from './Components/Client/CartAndOrderHistory/DeliveryAndChatSystem';
 // import DateSelectionAndCheckout  from './Components/Client/CartAndOrderHistory/DateSelectionAndCheckout';
 // import Favourites from './Components/Client/Favourites/Favourites';
-// import CMSSignIn from './Components/CMS/SignIn';
+import CMSSignIn from './Components/CMS/CMSSignIn';
 // import WelcomeToAMS from './Components/CMS/WelcomeToAMS';
 // import ManageUsers from './Components/CMS/ManageUsers';
 // import ManageBusoinesses from './Components/CMS/ManageBusiness';
@@ -32,8 +32,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* <Route path='/' element={<Landing/>}/> */}
-        <Route path='/aboutus' element={<AboutUs/>}/>
-        {/* <Route path='/signup' element={<SignUp/>}/>
+        {/* <Route path='/aboutus' element={<AboutUs/>}/> */}
+        {/* {/* <Route path='/signup' element={<SignUp/>}/>
         <Route path='/tellus' element={<TellUsAboutYourself/>}/>
         <Route path='/altnative-contact' element={<AlternativeContact/>}/>
         <Route path='/signin' element={<SignIn/>}/>
@@ -51,12 +51,13 @@ function App() {
         <Route path='/delivery' element={<DeliveryOngoing/>}/>
         <Route path='/chat' element={<DeliveryAndChatSystem/>}/>
         <Route path='/date' element={<DateSelectionAndCheckout/>}/>
-        <Route path='/favourites' element={<Favourites/>}/>
-        <Route path='/cms-signin' element={<CMSSignIn/>}/>
-        <Route path='/welcome' element={<WelcomeToAMS/>}/>
-        <Route path='/manage-users' element={<ManageUsers/>}/>
-        <Route path='/manage-businesses' element={<ManageBusoinesses/>}/> */}
-        
+        <Route path='/favourites' element={<Favourites/>}/> */}
+        <Route path='/cmssignin' element={CMSSignIn}/>
+        {/* // <Route path='/welcome' element={<WelcomeToAMS/>}/>
+        // <Route path='/manage-users' element={<ManageUsers/>}/>
+        // <Route path='/manage-businesses' element={<ManageBusoinesses/>}/>  */}
+    
+      
       </Routes>
     </BrowserRouter>
   )
