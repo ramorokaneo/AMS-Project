@@ -1,11 +1,11 @@
 // import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from './Components/Client/Landing/Landing';
 import AboutUs from './Components/Client/Landing/AboutUs';
 import SignUp from './Components/Client/SignUp/SignUp';
 import TellUsAboutYourself from './Components/Client/SignUp/TellUsAboutYourself';
 import AlternativeContact from './Components/Client/SignUp/AlternativeContact';
-import SignIn from './Components/Client/SignIn/Signin';
+import SignIn from "./Components/Client/SignIn/Signin";
 import BusinessRegistration from './Components/Client/BusinessRegistration/BusinessRegistration';
 import AddProductsAndServices from './Components/Client/BusinessRegistration/AddProductsAndServices';
 import PaymentInfo from './Components/Client/BusinessRegistration/AddProductsAndServices';
@@ -26,7 +26,6 @@ import WelcomeToAMS from './Components/CMS/WelcomeToAMS';
 import ManageUsers from './Components/CMS/ManageUsers';
 import ManageBusoinesses from './Components/CMS/ManageBusiness';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -36,7 +35,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/tellus' element={<TellUsAboutYourself/>}/>
         <Route path='/altnative-contact' element={<AlternativeContact/>}/>
-        <Route path='/signin' element={<SignIn/>}/>
+        <Route path="/signin" element={<SignIn />} />
         <Route path='/business-reg' element={<BusinessRegistration/>}/>
         <Route path='/add-products-and-services' element={<AddProductsAndServices/>}/>
         <Route path='/payment-info' element={<PaymentInfo/>}/>
@@ -59,7 +58,7 @@ function App() {
         
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
