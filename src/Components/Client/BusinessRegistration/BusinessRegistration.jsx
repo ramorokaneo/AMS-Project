@@ -89,8 +89,6 @@ const BusinessRegistration = () => {
     "Fashion",
   ];
 
-
-
   return (
     <>
       <div>
@@ -263,6 +261,7 @@ const BusinessRegistration = () => {
                       width: "48%",
                       marginTop: "5px",
                       marginRight: "10px",
+                      textAlign: "left",
                     }}>
                     {businessTypeOptions.map((option) => (
                       <MenuItem key={option} value={option}>
@@ -277,7 +276,11 @@ const BusinessRegistration = () => {
                     variant="standard"
                     value={selectedIndustry}
                     onChange={(e) => setSelectedIndustry(e.target.value)}
-                    style={{ width: "48%", marginTop: "5px" }}>
+                    style={{
+                      width: "48%",
+                      marginTop: "5px",
+                      textAlign: "left",
+                    }}>
                     {industryOptions.map((option) => (
                       <MenuItem key={option} value={option}>
                         {option}
