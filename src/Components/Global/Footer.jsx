@@ -10,9 +10,9 @@ export default function Footer() {
       style={{
         backgroundColor: "#070F18",
         // border: "1px solid",
-        width: "100%",
-        // height: "25vh",
-        // padding: "5px", // Add padding for better spacing
+        width: "200%",
+        
+        margin: 0, 
       }}>
       <Grid
         item
